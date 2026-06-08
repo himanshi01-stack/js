@@ -2,7 +2,7 @@
 
 // 7 types: String, number, boolean, null (empty), undefined, symbol(value ko unique banane me use), bigint
 
-// Reference (Non- primitive), memory me directly reference allocate kara jata hai
+// Reference (Non- primitive), memory me directly reference allocate kara jata hai, jo bhi change karenge voh sab original value me change hoga
 
 // Array, objects, functions
 
@@ -25,3 +25,26 @@ let myObj = {
 const myFunction = function(){
     console.log("hello world");
 }
+
+
+// Memory 
+// Stack Memory:-- used in primitive datatypes, Heap Memory:-- used in non-primitive datatypes
+let myYoutubename = "himanshi"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+//primitive datatype hai toh changes uski copy me hoge original variable me nahi (stack memory)
+
+console.log(myYoutubename); //o/p:- himanshi
+console.log(anothername); //o/p:- chaiaurcode
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+let userTwo = userOne
+
+userTwo.email = "himanshi@google.com"
+//non- primitive datatype hai toh original me value change hogi
+
+console.log(userOne.email);
+console.log(userTwo.email);

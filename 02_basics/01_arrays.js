@@ -19,3 +19,10 @@ myArr.shifht() //yeh simply jo value unshift me daali thi usse remove karta hai
 
 console.log(myArr.includes(9)); //boolean value dega to answer ki voh value arr me hai ya nahi
 //similarly ".index" ka bhi use karenge jo uss particular ele ka index o/p me dega
+
+const newArr = myArr.join() //join, array ko string me karta hai
+console.log(myArr);
+console.log(newArr);
+console.log(typeof newArr);
+
+//slice, splice; splice original arr me bhi changes karta hai
